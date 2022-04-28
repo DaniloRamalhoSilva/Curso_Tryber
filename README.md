@@ -1,8 +1,8 @@
 ## Curso de Desenvolvimento Web ##
 
-Este é um projeto para armazenar todo o conteudo encinado no curso de desenvolvimento web fornecido pela Trybe.
+Este é um projeto para armazenar todo o conteudo ensinado no curso de desenvolvimento web fornecido pela Trybe.
 
-No decorer do curso iremos aprender sobre:
+No decorrer do curso iremos aprender sobre:
 
 -JavaScript
 -Node
