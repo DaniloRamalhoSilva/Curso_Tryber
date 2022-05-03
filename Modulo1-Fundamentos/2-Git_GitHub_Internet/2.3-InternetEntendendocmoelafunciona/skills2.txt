@@ -4,3 +4,6 @@ Besh
 JavaJs
 Trabalho de equipe
 Auto Conhecimento
+Unix
+Git
+HTML
