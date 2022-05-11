@@ -1,0 +1,26 @@
+.imagGeral{
+    width: 250px;   
+}
+
+.ImagFatos{
+    width: 250px;   
+    
+}
+
+table, td, th{
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+padding: 5px;
+}
+
+th{
+    background: rgba(198, 236, 198, 0.897);
+}
