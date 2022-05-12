@@ -1,7 +1,7 @@
-let peca = "peão";
+let peca = "Peão";
 let movimento = null ;
 
-switch(peca){
+switch(peca.toLowerCase()){
     case "rainha": 
         movimento = "vertica, horisontal e diagonal (quantas casa forem posivel)(não salta sobre outras peças)";
     break;
