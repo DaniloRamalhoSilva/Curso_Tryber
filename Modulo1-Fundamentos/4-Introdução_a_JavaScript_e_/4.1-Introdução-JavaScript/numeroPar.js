@@ -1,12 +1,12 @@
 const n1 = 60;
 const n2 = 52;
 const n3 = 2;
-let impar = null; 
+let par = null; 
 
 if(n1 % 2 != 0 || n2%2 !=0 || n3 % 2 != 0 ){
-    impar = true;
+    par = false;
 }else{
-    impar = false;
+    par = true ;
 }
 
-console.log("Numero e inpar? " + impar);
+console.log("Numero e par? " + par);

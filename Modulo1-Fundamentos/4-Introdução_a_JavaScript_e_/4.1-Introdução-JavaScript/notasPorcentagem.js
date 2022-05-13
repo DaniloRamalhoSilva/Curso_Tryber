@@ -23,6 +23,5 @@ if(typeof notaPor === "string"){
     }
 }
 
-
 console.log(notaLet);
 
