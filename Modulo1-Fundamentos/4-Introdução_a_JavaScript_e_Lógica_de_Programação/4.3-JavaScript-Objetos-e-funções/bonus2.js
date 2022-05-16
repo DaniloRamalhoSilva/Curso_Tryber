@@ -1,11 +1,7 @@
 
 const n = 5;
-let linha = null;
+let linha = '';
 for(let i = 0; i < n; i+=1){
-    if(linha == null){
-        linha = '*';
-    }else{
-        linha = linha + '*';
-    }    
+    linha = linha + '*';
     console.log(linha)
 }

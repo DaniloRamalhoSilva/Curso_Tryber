@@ -4,14 +4,9 @@ const n = 5;
 
 
 for(let i = 0; i < n; i+=1){
-    let linha = null;
+    let linha = '';
     for(let index = 0; index < n; index+=1){
-        if(linha == null){
-            linha = '*';
-        }else{
-            linha = linha + '*';
-        }
-        
+        linha = linha + '*';
     }
     console.log(linha)
 }
