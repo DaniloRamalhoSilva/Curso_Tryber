@@ -1,4 +1,6 @@
-let numeroAFatorar = 12;
+//crie um algoritmo que retorne o fatorial de 10
+
+let numeroAFatorar = 10;
 let numeroFatorado = numeroAFatorar;
 
 for(i = numeroAFatorar; i > 1; i -=1){
