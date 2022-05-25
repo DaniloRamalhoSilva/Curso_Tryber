@@ -18,6 +18,11 @@ function addPhraseToLocalStorage() {
   localStorage.setItem('phrases', JSON.stringify(oldList));
   insertPhraseInDOM();
 }
+let strinA = 'khdi';
+
+strinA.includes('jskld');
+console.log(strinA);
+
 
 function initialRenderization() {
   if (localStorage.getItem('phrases') === null) {
