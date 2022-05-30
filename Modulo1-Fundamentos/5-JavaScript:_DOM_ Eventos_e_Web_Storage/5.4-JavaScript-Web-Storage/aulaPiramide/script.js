@@ -3,6 +3,7 @@ window.onload = function() {
   let numberOfLines = (basePyramid + 1) / 2; // 5
   let controlLeft = numberOfLines; // 5
   let controlRight = numberOfLines; // 5
+  
   let lines = document.querySelectorAll(".line");
 
   updateVisit();
