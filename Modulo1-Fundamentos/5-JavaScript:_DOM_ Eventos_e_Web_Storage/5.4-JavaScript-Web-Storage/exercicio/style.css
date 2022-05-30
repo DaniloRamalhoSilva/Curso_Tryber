@@ -1,0 +1,37 @@
+#main{
+    margin: 0px 50px;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px 100px;
+}
+
+#main p{
+    text-align: justify;
+}
+
+#imag{
+    display: block;
+    margin: auto;
+   margin-bottom: 5px;
+}
+
+#legenda{
+    display: block;
+}
+
+#secImag{
+    text-align: center;
+    
+}
+
+#heder{
+    margin: 0px 50px;
+    text-align: center;
+    padding: 0px 100px;
+    background-color: blue;
+    
+}
+
+#heder div{
+   
+}
