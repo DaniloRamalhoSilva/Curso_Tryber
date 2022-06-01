@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="heder">
+        <div id="imag"><a
+                href="https://www.betrybe.com/?utm_source=google&utm_medium=cpc&utm_campaign=pmax2&utm_content=ad1&gclid=Cj0KCQjw1tGUBhDXARIsAIJx01mclCfhWYFE24Etja5PNr5ofwcfUz4PZi5MB7lluoMLlY2gmkTUqkQaAiwqEALw_wcB"><img
+                    src="https://assets-global.website-files.com/61549abf6fb9ca5e91bc5709/61549abf6fb9ca4630bc5747_Logo.svg"
+                    loading="lazy" alt="" class="image-45"></a>
+        </div>
+        <div id="titulo">
+            <h1 id="title">Concorrer a uma viagem</h1>
+        </div>
+    </header>
+    <main id="main">
+        <header id="harerMain" class="form-header speaker-form">
+            <h1>Formulario</h1>
+        </header>
+
+        <form action="" method="get" class="speaker-form">
+            <div class="line-content">
+                <label for="input-nome">
+                    Nome Completo:
+                    <input type="text" maxlength="40" minlength="10" id="input-nome" required autofocus
+                        placeholder="Digite seu nome completo ">
+                </label>
+            </div>
+            <div class="line-content">
+                <label for="input-email">
+                    E-mail:
+                    <input type="email" maxlength="50" minlength="10" id="input-email" required
+                        placeholder="Digite seu email ">
+                </label>
+            </div>
+
+            <div class="line-content">
+                <fieldset class="fieldset">
+                    <legend>Destino Preferido:</legend>
+                    <label for="local-cidade">
+                        <input type="radio" name="local" id="local-cidade" class="radio" checked>
+                        Cidade
+                    </label>
+                    <label for="local-Campo">
+                        <input type="radio" name="local" id="local-Campo" class="radio">
+                        Campo
+                    </label>
+                    <label for="local-Praia">
+                        <input type="radio" name="local" id="local-Praia" class="radio">
+                        Praia
+                    </label>
+                    <label for="local-Montanhas">
+                        <input type="radio" name="local" id="local-Montanhas" class="radio">
+                        Montanhas
+                    </label>
+                </fieldset>
+            </div>
+            <div class="line-content">
+                <label for="motivo">
+                    Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+                    <textarea class="abstract-style" name="motivo" id="motivo" maxlength="500"></textarea>
+                </label>
+            </div>
+            <div class="line-content">
+                <label for="">
+                    Qual a melhor data para realizar sua viagem?
+                </label>
+                <br>
+                <input type="date" name="data" id="data">
+            </div>
+            <div class="line-content">
+                <label for="check-oportunidades">
+                    <input type="checkbox" name="oportunidades" id="check-oportunidades">
+                    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+                <br>
+                <label for="check-imagem">
+                    <input type="checkbox" name="imagem" id="check-imagem" required>
+                    Concordo que imagens das minhas poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+            <div class="cont-button">
+                <button type="submit" id="submit" class="button">Enviar</button>
+                <button type="reset" id="rest" class="button">Limpar</button>
+            </div>
+
+        </form>
+
+    </main>
+    <section>
+        <footer>
+
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
