@@ -35,5 +35,4 @@ const tudo = {
 
 const {name, age, nationality, profession, squadInitials, squad} = tudo;
 
-console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
-
+console.log(`Hi,  my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
