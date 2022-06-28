@@ -68,6 +68,7 @@ const expectedResult2 = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Fr
 
 function reduceNames() {
   // escreva seu código aqui
+  return books.reduce((acc, curr, index)=> (index === 0)? acc = curr.author.name : `${acc}, ${curr.author.name}`, '') + '.';
 }
 
 
@@ -78,7 +79,10 @@ const expectedResult3 = 43;
 
 function averageAge() {
   // escreva seu código aqui
+  const idadelançamento = books.reduce((acc, curr) => acc + (curr.releaseYear - curr.author.birthYear), 0);
+  return idadelançamento / books.length;
 }
+
 
 
 
@@ -98,4 +102,9 @@ const expectedResult4 = {
 
 function longestNamedBook() {
   // escreva seu código aqui
+  return books.reduce((acc, curr)=> {
+   return (acc.name.length < curr.name.length)? acc = curr : acc;
+  })
 }
+
+console.log(longestNamedBook());
