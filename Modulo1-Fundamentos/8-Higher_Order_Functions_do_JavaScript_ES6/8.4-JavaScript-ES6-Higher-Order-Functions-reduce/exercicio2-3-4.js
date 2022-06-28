@@ -102,9 +102,7 @@ const expectedResult4 = {
 
 function longestNamedBook() {
   // escreva seu código aqui
-  return books.reduce((acc, curr)=> {
-   return (acc.name.length < curr.name.length)? acc = curr : acc;
-  })
+  return books.reduce((acc, curr)=> (acc.name.length < curr.name.length)? acc = curr : acc);
 }
 
 console.log(longestNamedBook());
