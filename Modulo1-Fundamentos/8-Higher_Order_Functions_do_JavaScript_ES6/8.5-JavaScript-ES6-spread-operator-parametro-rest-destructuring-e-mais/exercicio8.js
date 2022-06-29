@@ -2,6 +2,8 @@
 //Dica: use default params.
 
 // escreva greet abaixo
+const greet = ( nome, saldacao = 'Hi' ) => `${saldacao} ${nome}`;
+
 
 console.log(greet('John')) // 'Hi John'
 console.log(greet('John', 'Good morning')) // 'Good morning John'
