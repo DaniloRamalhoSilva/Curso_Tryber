@@ -14,6 +14,3 @@ const getUser = (param) => {
 
 // Chamada/execução da função getUser, que vai receber como parâmetro nossa função userFullName.
 getUser(userFullName);
-
-
-
