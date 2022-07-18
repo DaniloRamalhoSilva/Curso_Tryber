@@ -1,7 +1,9 @@
 import './App.css';
+import React from 'react';
 import Heder from './Header';
 import Content from './Content';
-import React from 'react';
+import Footer from './Footer';
+
 
 function App() {
 
@@ -9,6 +11,7 @@ function App() {
     <React.Fragment>
       <Heder />
       <Content/>
+      <Footer/>
     </React.Fragment>
   );
 }
