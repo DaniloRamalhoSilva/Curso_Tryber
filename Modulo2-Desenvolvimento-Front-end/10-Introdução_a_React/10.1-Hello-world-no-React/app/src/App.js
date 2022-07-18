@@ -1,9 +1,15 @@
 import './App.css';
 import Heder from './Header';
+import Content from './Content';
+import React from 'react';
 
 function App() {
+
   return (
-   <Heder/>
+    <React.Fragment>
+      <Heder />
+      <Content/>
+    </React.Fragment>
   );
 }
 
