@@ -24,17 +24,17 @@ const conteudos = [
 ];
 
 const montaLI = ({conteudo, bloco, status} , index) =>{
-  const conteudoP = <p>O conteudo é: {conteudo}</p>;
-  const statusP = <p>Status: {status}</p>;
-  const blocoP = <p>Bloco: {bloco}</p>
+  const conteudoP = <p><em>O conteudo é: </em>{conteudo}</p>;
+  const statusP = <p><em>Status:  </em>{status}</p>;
+  const blocoP = <p><em>Bloco: </em>{bloco}</p>
 
-  return <li key={index} >{conteudoP} {statusP} {blocoP}</li>
+  return <li className="liConteudo" key={index} >{conteudoP} {statusP} {blocoP}</li>
 }
 
 class Content extends Component {  
   render() {
     const jsxConteudo = conteudos.map((conteudo, index) => montaLI(conteudo , index) ) // cria um array de tags <li>    
-    return <ol>{jsxConteudo}</ol>;    
+    return <ol className="olConteudo" >{jsxConteudo}</ol>;    
   }
 }
 
