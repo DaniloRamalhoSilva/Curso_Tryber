@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      height: 50px;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <p>Color: <span id="value">white</span></p>
+    <button id="previous">Previous color</button>
+    <button id="next">Next color</button>
+    <button id="random">Random color</button>
+  </div>
+
+  <script>
+    const INITIAL_STATE = {
+      colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
+      index: 0,
+    };
+
+    const reducer = (state = INITIAL_STATE, action) => {
+      switch (action.type) {
+        case "NEXTCOLOR":
+          return {
+            ...state,
+            index: state.index + 1,
+          };
+        case "PREVIOUSCOLOR":
+          return {
+            ...state,
+            index: state.index - 1,
+          };
+        case "RANDOMCOLOR":
+          return {
+            ...state,
+            colors: [...state.colors, criarCor()],
+            index: state.colors.length,
+          };
+        default: // No switch, sempre precisamos ter um caso default!
+          return state;
+      }
+    };
+
+    const store = Redux.createStore(reducer);
+
+    const nextColor = (email) => ({
+      type: "NEXTCOLOR"
+    });
+
+    const previousColor = (email) => ({
+      type: "PREVIOUSCOLOR"
+    });
+
+    const randomColor= (email) => ({
+      type: "RANDOMCOLOR"
+    });
+
+    function criarCor() {
+      const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+      let cor = '#';
+      const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+      for (let i = 0; i < 6; i += 1) {
+        cor += oneChar[aleatorio()];
+      }
+      return cor;
+    }
+
+    
+
+    const btnNext = window.document.getElementById('next');
+    const btnPrevious = window.document.getElementById('previous');
+    const random = window.document.getElementById('random');
+    const container = window.document.getElementById('container');
+    const value = window.document.getElementById('value');
+
+    random.addEventListener('click', () => {
+      store.dispatch(randomColor());
+      const state = store.getState()
+      value.innerText = state.colors[state.index];
+      container.style.backgroundColor = state.colors[state.index];
+    })
+
+    btnNext.addEventListener('click', () => {
+      store.dispatch(nextColor());
+      const state = store.getState()
+      value.innerText = state.colors[state.index];
+      container.style.backgroundColor = state.colors[state.index];
+    })
+
+    btnPrevious.addEventListener('click', () => {
+      store.dispatch(previousColor());
+      const state = store.getState()
+      value.innerText = state.colors[state.index];
+      container.style.backgroundColor = state.colors[state.index];
+    })
+
+
+
+  </script>
+</body>
+
+</html>
